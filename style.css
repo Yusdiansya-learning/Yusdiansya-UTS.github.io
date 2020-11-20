@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;900&display=swap');
+@import url('link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat',sans-serif;
+
+}
+body{
+	background: #f8f9fa;
+}
+hr{
+	width: 100px;
+	position: absolute;
+	top: 2.5%;
+	border: 1px solid #e1e1e1;
+}
+.banner{
+	background-image: linear-gradient(rgba(1,0,0,0.5), #009688), url(asset/banner.jpg);
+	width: 100%;
+	height: 100vh;
+	background-size: cover;
+	background-position: center;	
+}
+
+.logo{
+	width: 168px;
+	position: absolute;
+	top: 4%;
+	left: 10%
+}
+.banner-text{
+	left: 10%;
+	top: 15%;
+	position: absolute;
+	color: #fff;
+}
+.banner-text h1{
+	font-size: 50px;
+    line-height: 1.6;
+    letter-spacing: 0.2px;
+    font-weight: 700;
+    font-family: 'Montserrat',sans-serif;
+}
+.banner-text p {
+	font-size: 15px;
+	letter-spacing: 3px;
+	margin-left: 120px;	
+	font-family: 'Montserrat',sans-serif;
+	font-weight: 200;
+	padding-bottom: 30px;
+}
+.banner-btn{
+	bottom: 15%;
+	left: 10%;
+	position: absolute;	
+}
+.banner-btn a{
+	width: 150px;
+	text-decoration: none;
+	display: inline-block;
+	margin: 0px 10px;
+	padding: 15px 18px;
+	color: #fff;
+	border: .5px solid #fff;
+	position: relative;
+	z-index: 1;
+	transition: color 0.5s;
+	text-align: center;
+	border-radius: 5px;
+}
+.banner-btn a span{
+	width: 0;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #fff;
+	z-index: -1;
+	transition: 0.5s;
+}
+.banner-btn a:hover span{
+	width: 100%;
+}
+.banner-btn a:hover{
+	color: #000;
+}
+#sidenav{
+	position: absolute;
+	right: 10%;
+	top: 5%;
+}
+#sidenav ul li{
+	list-style: none;
+	display: inline-block;
+	margin: 0 40px;
+}
+#sidenav ul li a{
+	text-decoration: none;
+	color: #fff;
+	font-weight: 200;
+	letter-spacing: 1.5px;
+	font-family: 'Montserrat',sans-serif;
+	font-size: 15px;
+}
+
+#features{
+	width: 100%;
+	height: 150vh;
+	background-color: #f8f9fa;
+}
+.tengah{
+	margin: 0 auto;
+	width: 80%;
+	position: relative;
+
+}
+.features-text{
+	padding-top: 200px;
+	width: 50%;
+}
+.features-text hr{
+	position: absolute;
+	top: 44.5%;
+}
+.features-text p{
+	margin-left: 120px;
+	padding-bottom: 20px;
+}
+.features-text h1{
+	color: #1f2960;
+	font-size: 40px;
+	line-height: 1.6;
+	letter-spacing: 0.2px;
+	font-weight: bold;
+	padding-bottom: 50px;
+}
+.features-btn a{
+	width: 150px;
+	text-decoration: none;
+	display: inline-block;	
+	padding: 15px 18px;
+	color: #202943;
+	background: #ffc425;
+	border: .5px solid #ffc425;
+	position: relative;
+	z-index: 1;
+	transition: color 0.5s;
+	text-align: center;
+	border-radius: 5px;
+}
+.features-btn a span{
+	width: 0;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #fff;
+	z-index: -1;
+	transition: 0.5s;
+}
+.features-btn a:hover span{
+	width: 100%;
+}
+.features-btn a:hover{
+	color: #000;
+}
+.gambar-service img{
+	width: 100px;
+	padding-right: 160px;
+}
+.gambar{
+	width: 50%;	
+	float: right;
+	position: absolute;
+	right: -10%;
+	top: 40%;
+
+}
+.gambar-service{
+	float: left;
+}
+.gambar-kiri{
+	position: absolute;
+	left: -15%;
+	top: 160%;
+	transform: rotate(85deg);
+}
+.tiga{
+	width: 90%;
+	height: 100vh;
+	left: 10%;
+	position: absolute;
+	background-color: #fff;
+}
+.tiga-text{
+	padding-top: 150px;
+	width: 50%;
+}
+.tiga-text hr{
+	position: absolute;
+	top: 46%;
+}
+.tiga-text p{
+	margin-left: 120px;
+	
+}
+.tiga-text h1{
+	color: #1f2960;
+	font-size: 40px;
+	line-height: 1.6;
+	letter-spacing: 0.2px;
+	font-weight: bold;
+	padding-bottom: 50px;
+}
+.isi-tiga{
+	width: 30%;
+	text-align: initial;
+	float: left;
+	padding-right: 30px;
+	
+}
+.isi-tiga p{
+	font-size: 16px;
+	color: #1f2960;
+	line-height: 1.6;
+}
+.gambar-kanan{
+	position: absolute;	
+	transform: rotate(320deg);
+	left: 40%;
+}
+.tiga-btn{
+	position: absolute;
+	top: 155%;
+}
+.tiga-btn a{
+	width: 150px;
+	text-decoration: none;
+	display: inline-block;	
+	padding: 15px 18px;
+	color: #202943;
+	background: #ffc425;
+	border: .5px solid #ffc425;
+	position: relative;
+	z-index: 1;
+	transition: color 0.5s;
+	text-align: center;
+	border-radius: 5px;
+}
+.tiga-btn a span{
+	width: 0;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #fff;
+	z-index: -1;
+	transition: 0.5s;
+}
+.tiga-btn a:hover span{
+	width: 100%;
+}
+.tiga-btn a:hover{
+	color: #000;
+}
