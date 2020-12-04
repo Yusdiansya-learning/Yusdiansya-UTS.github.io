@@ -1,75 +1,124 @@
-@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
-@import url('link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;900&display=swap');
-@import url('link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
+@import url('link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;700;800;900&family=Poppins:wght@100&display=swap');
+
 *{
 	margin: 0;
 	padding: 0;
-	font-family: 'Montserrat',sans-serif;
-
+	font-family: 'Montserrat', sans-serif;	
 }
 body{
 	background: #f8f9fa;
+
+}
+li{
+	list-style: none;
 }
 hr{
 	width: 100px;
-	position: absolute;
-	top: 2.5%;
-	border: 1px solid #e1e1e1;
+	border: 1px solid gray;
 }
 .banner{
-	background-image: linear-gradient(rgba(1,0,0,0.5), #009688), url(asset/banner.jpg);
 	width: 100%;
-	height: 100vh;
-	background-size: cover;
-	background-position: center;	
+	height: 105vh;
+	background:linear-gradient(240deg,rgba(8,50,168,.67),#0832a8),url(asset/banner.jpg);
+	background-position: center;
+	background-size: cover;	
 }
-
+.navbar{
+	width: 85%;
+	margin: 0 auto;
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	top: 5%;
+}
+.tengah{
+	width: 85%;
+	margin: 0 auto;
+	position: relative;
+	display: flex;
+	justify-content: space-between;	
+}
 .logo{
 	width: 168px;
+	cursor: pointer;	
+}
+.sidenav{
+	z-index: 1;
+}
+.sidenav ul li{
+	display: inline-block;
+	padding: 20px 40px 20px 50px;
+
+}
+.sidenav ul li a{
+	color: #fff;
+	text-decoration: none;
+	font-weight: 300;    
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 1.57px;	
+    font-size: 15px;
+}
+.kotak{
+	width: 200px;
+	height: 130px;
 	position: absolute;
-	top: 4%;
-	left: 10%
+	background-color: #ffc425;
+	top: 0;
+	right: 7.5%;
+	border-radius: 1px;
 }
 .banner-text{
-	left: 10%;
-	top: 15%;
+	margin: 60px 100px;
+	width: 60%;
+}
+.banner-text p{
+	content: "";
+    width: 100px;    
+    display: block;   
+    border-bottom: 1px solid #f2efea; 
+    padding-top: 15px;
+}
+.banner-text h3{
 	position: absolute;
-	color: #fff;
+	left: 16%;
+	margin-top: -14px;
+	color: #e1e1e1;
+	font-size: 15px;
+	line-height: 30px;
+	font-weight: 100;
+	font-family: 'poppins', sans-serif;   
+    letter-spacing: 3.96px;
 }
 .banner-text h1{
+	margin-top: 30px;
 	font-size: 50px;
     line-height: 1.6;
-    letter-spacing: 0.2px;
+    letter-spacing: 2.82px;
     font-weight: 700;
-    font-family: 'Montserrat',sans-serif;
-}
-.banner-text p {
-	font-size: 15px;
-	letter-spacing: 3px;
-	margin-left: 120px;	
-	font-family: 'Montserrat',sans-serif;
-	font-weight: 200;
-	padding-bottom: 30px;
+    color: #fff;
+    
 }
 .banner-btn{
-	bottom: 15%;
-	left: 10%;
-	position: absolute;	
+	position: absolute;
+	left: 7.5%;
+	
 }
 .banner-btn a{
 	width: 150px;
 	text-decoration: none;
-	display: inline-block;
-	margin: 0px 10px;
-	padding: 15px 18px;
+	display: inline-block;	
+	padding: 18px 18px;
 	color: #fff;
-	border: .5px solid #fff;
+	border: .5px solid #ffc425;
 	position: relative;
 	z-index: 1;
 	transition: color 0.5s;
 	text-align: center;
-	border-radius: 5px;
+	background-color: #ffc425;
+	border-radius: 4px;
 }
 .banner-btn a span{
 	width: 0;
@@ -85,73 +134,57 @@ hr{
 	width: 100%;
 }
 .banner-btn a:hover{
-	color: #000;
-}
-#sidenav{
-	position: absolute;
-	right: 10%;
-	top: 5%;
-}
-#sidenav ul li{
-	list-style: none;
-	display: inline-block;
-	margin: 0 40px;
-}
-#sidenav ul li a{
-	text-decoration: none;
-	color: #fff;
-	font-weight: 200;
-	letter-spacing: 1.5px;
-	font-family: 'Montserrat',sans-serif;
-	font-size: 15px;
-}
-
-#features{
-	width: 100%;
-	height: 150vh;
-	background-color: #f8f9fa;
-}
-.tengah{
-	margin: 0 auto;
-	width: 80%;
-	position: relative;
-
-}
-.features-text{
-	padding-top: 200px;
-	width: 50%;
-}
-.features-text hr{
-	position: absolute;
-	top: 44.5%;
-}
-.features-text p{
-	margin-left: 120px;
-	padding-bottom: 20px;
-}
-.features-text h1{
 	color: #1f2960;
-	font-size: 40px;
-	line-height: 1.6;
-	letter-spacing: 0.2px;
-	font-weight: bold;
-	padding-bottom: 50px;
 }
-.features-btn a{
+
+
+.dua{
+	height: 150vh;
+}
+
+.dua-text{
+	margin-top: 200px;
+	width: 60%;
+}
+
+.dua-text p{
+	content: "";
+    width: 100px;    
+    display: block;   
+    border-bottom: 1px solid #1f2960; 
+    padding-top: 15px;
+}
+.dua-text h3{
+	position: absolute;
+	left: 11%;
+	margin-top: -14px;
+	color: #1f2960;
+	font-size: 15px;
+	line-height: 30px;
+    font-weight: 300;
+    letter-spacing: 3.96px;
+}
+.dua-text h1{
+	margin-top: 30px;
+	font-size: 40px;
+    line-height: 1.6;    
+    font-weight: 900;
+    color: #1f2960;
+}
+.dua-text button a{
 	width: 150px;
 	text-decoration: none;
 	display: inline-block;	
-	padding: 15px 18px;
-	color: #202943;
-	background: #ffc425;
-	border: .5px solid #ffc425;
+	padding: 18px 18px;
+	color: #1f2960;	
 	position: relative;
 	z-index: 1;
 	transition: color 0.5s;
 	text-align: center;
-	border-radius: 5px;
+	background-color: #ffc425;
+	border-radius: 4px;
 }
-.features-btn a span{
+.dua-text button a span{
 	width: 0;
 	height: 100%;
 	position: absolute;
@@ -161,94 +194,170 @@ hr{
 	z-index: -1;
 	transition: 0.5s;
 }
-.features-btn a:hover span{
+.dua-text button a:hover span{
 	width: 100%;
 }
-.features-btn a:hover{
-	color: #000;
-}
-.gambar-service img{
-	width: 100px;
-	padding-right: 160px;
-}
-.gambar{
-	width: 50%;	
-	float: right;
-	position: absolute;
-	right: -10%;
-	top: 40%;
-
-}
-.gambar-service{
-	float: left;
-}
-.gambar-kiri{
-	position: absolute;
-	left: -15%;
-	top: 160%;
-	transform: rotate(85deg);
-}
-.tiga{
-	width: 90%;
-	height: 100vh;
-	left: 10%;
-	position: absolute;
-	background-color: #fff;
-}
-.tiga-text{
-	padding-top: 150px;
-	width: 50%;
-}
-.tiga-text hr{
-	position: absolute;
-	top: 46%;
-}
-.tiga-text p{
-	margin-left: 120px;
-	
-}
-.tiga-text h1{
+.dua-text button a:hover{
 	color: #1f2960;
-	font-size: 40px;
-	line-height: 1.6;
-	letter-spacing: 0.2px;
-	font-weight: bold;
-	padding-bottom: 50px;
 }
-.isi-tiga{
-	width: 30%;
-	text-align: initial;
-	float: left;
-	padding-right: 30px;
-	
+.dua-btn a{
+	margin-top: 60px;
 }
-.isi-tiga p{
-	font-size: 16px;
-	color: #1f2960;
-	line-height: 1.6;
-}
-.gambar-kanan{
-	position: absolute;	
-	transform: rotate(320deg);
-	left: 40%;
-}
-.tiga-btn{
-	position: absolute;
-	top: 155%;
-}
-.tiga-btn a{
+.dua-btn a{
 	width: 150px;
 	text-decoration: none;
 	display: inline-block;	
-	padding: 15px 18px;
+	padding: 18px 18px;
 	color: #202943;
-	background: #ffc425;
 	border: .5px solid #ffc425;
 	position: relative;
 	z-index: 1;
 	transition: color 0.5s;
 	text-align: center;
-	border-radius: 5px;
+	background-color: #ffc425;
+	border-radius: 4px;
+}
+.dua-btn a span{
+	width: 0;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #fff;
+	z-index: -1;
+	transition: 0.5s;
+}
+.dua-btn a:hover span{
+	width: 100%;
+	border-radius: 4px;
+}
+.dua-btn a:hover{
+	color: #1f2960;
+}
+.dua-kiri{
+	width: 50%;	
+}
+.dua-isi{
+	float: left;
+	width: 48%;
+	height: 220px;
+
+}
+.dua-isi img{
+	width: 100px;
+	margin-top: 200px;	
+}
+.dua-isi p{
+	display: block;
+    font-size: 18px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: .73px;
+    color: #1f2960;
+}
+.clear{
+	clear: both;
+}
+.bg-sisi{
+	position: absolute;
+	left: -3%;
+	top: 190%;
+}
+.bg-sisi img{
+	width: 300px;
+	transform: rotate(-150deg);
+}
+
+.fix img{
+	width: 300px;
+	transform: rotate(-150deg);
+	left: -3%;
+	position: absolute;
+}
+.tiga{
+	width: 90%;
+	height: 100vh;
+	background: #fff;
+	display: flex;
+	margin-left: 10%;
+}
+.tiga-text{
+	margin-top: 120px;
+	width: 60%;
+}
+
+.tiga-text p{
+	content: "";
+    width: 100px;    
+    display: block;   
+    border-bottom: 1px solid #1f2960; 
+    padding-top: 15px;
+}
+.tiga-text h3{
+	position: absolute;
+	left: 11%;
+	margin-top: -14px;
+	color: #1f2960;
+	font-size: 15px;
+	line-height: 30px;
+    font-weight: 300;
+    letter-spacing: 3.96px;
+}
+.tiga-text h1{
+	margin-top: 30px;
+	font-size: 40px;
+    line-height: 1.6;    
+    font-weight: 900;
+    color: #1f2960;
+    padding-bottom: 60px;
+}
+.tiga-text button a{
+	width: 150px;
+	text-decoration: none;
+	display: inline-block;	
+	padding: 18px 18px;
+	color: #1f2960;	
+	position: relative;
+	z-index: 1;
+	transition: color 0.5s;
+	text-align: center;
+	background-color: #ffc425;
+	border-radius: 4px;
+}
+.tiga-text button a span{
+	width: 0;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #fff;
+	z-index: -1;
+	transition: 0.5s;
+}
+.tiga-text button a:hover span{
+	width: 100%;
+}
+.tiga-text button a:hover{
+	color: #1f2960;
+}
+.tiga-btn a{
+	margin-top: 60px;
+}
+.tiga-btn a{
+	width: 150px;
+	text-decoration: none;
+	display: inline-block;	
+	padding: 18px 18px;
+	color: #202943;
+	border: .5px solid #ffc425;
+	position: relative;
+	z-index: 1;
+	transition: color 0.5s;
+	text-align: center;
+	background-color: #ffc425;
+	border-radius: 4px;
 }
 .tiga-btn a span{
 	width: 0;
@@ -262,7 +371,379 @@ hr{
 }
 .tiga-btn a:hover span{
 	width: 100%;
+	border-radius: 4px;
 }
 .tiga-btn a:hover{
-	color: #000;
+	color: #1f2960;
+}
+.tulisan{
+	width: 42%;
+	float: left;
+	margin-right: 40px;
+}
+.tulisan h5{
+	font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: .46px;
+    color: #525c79;
+    font-weight: 200;
+}
+.empat-text{
+	margin-top: 120px;
+	width: 100%;
+}
+
+.empat-text p{		
+    width: 100px;    
+    display: block;   
+    border-bottom: 1px solid #1f2960; 
+    padding-top: 15px;
+}
+.empat-text h3{
+	position: absolute;
+	left: 11%;
+	margin-top: -14px;
+	color: #1f2960;
+	font-size: 15px;
+	line-height: 30px;
+    font-weight: 300;
+    letter-spacing: 3.96px;
+
+}
+.empat-text h1{	
+	font-size: 40px;
+    line-height: 1.6;    
+    font-weight: 900;
+    color: #1f2960;
+    padding-bottom: 130px;
+    padding-top: 25px;
+}
+.empat-bawah{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	margin-bottom: 70px;
+}
+.empat-gambar{
+	width: 50%;
+}
+.empat-gambar img{	
+	width: 90%;
+	border-radius: 8px;
+	height: 85vh;
+	object-fit: cover;
+	background-position: center;	
+}
+.empat-isi{
+	width: 42%;
+	margin-left: 80px;	
+}
+.empat-isi h2{
+	color: #1f2960;
+	font-weight: 700;
+	font-size: 40px;
+}
+.empat-isi h4{
+	border: 1px solid #1f2960;
+	width: 150px;
+	float: left;
+	padding: 10px 5px;
+	margin-right: 5px;
+	border-radius: 4px;
+	text-align: center;
+	font-weight: lighter;
+	color: #1f2960;
+}
+.empat-isi h5{
+	width: 72%;
+	font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: .46px;
+    color: #525c79;
+    font-weight: 200;
+    
+}
+.empat-btn a{
+	margin-top: 25px;
+}
+.empat-btn a{
+	width: 150px;
+	text-decoration: none;
+	display: inline-block;	
+	padding: 18px 18px;
+	color: #202943;
+	border: .5px solid #ffc425;
+	position: relative;
+	z-index: 1;
+	transition: color 0.5s;
+	text-align: center;
+	background-color: #ffc425;
+	border-radius: 4px;
+}
+.empat-btn a span{
+	width: 0;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #fff;
+	z-index: -1;
+	transition: 0.5s;
+}
+.empat-btn a:hover span{
+	width: 100%;
+	border-radius: 4px;
+}
+.empat-btn a:hover{
+	color: #1f2960;
+}
+.lima{
+	width: 100%;
+	height: 111vh;
+	background-color: #fff;
+}
+.quote{
+	width: 170px;
+	padding: 70px 0;
+}
+.lima-isi{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.isi-kanan{
+	width: 40%;
+}
+.isi-kanan h1{
+	font-size: 40px;
+    line-height: 1.6;    
+    font-weight: 700;
+    color: #1f2960;
+    margin-bottom: 20px;
+
+}
+.isi-kiri{
+	width: 50%;
+	margin-left: 70px;
+}
+.isi-kiri h4{
+	line-height: 1.6;
+	color: #525c79;
+	font-weight: lighter;
+	letter-spacing: 1px;
+
+
+}
+.isi-kiri img{
+	width: 60px;
+	border-radius: 30px;
+	background-position: center;
+	float: left;
+	margin-right: 30px;
+	margin-top: 20px;
+}
+.isi-kiri h5 {
+	font-size: 18px;
+    font-weight: 700;
+    letter-spacing: .51px;
+    color: #0832a8;
+    margin-bottom: 5px;
+    margin-top: 20px;
+}
+.isi-kiri p{
+	letter-spacing: .46px;
+    color: #555f7f;
+    font-weight: 100;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 10px;
+}
+
+.partnership h1{
+	font-size: 22px;
+    line-height: 1.6;    
+    font-weight: 700;
+    color: #1f2960;
+    margin-top: 25vh;
+    border-top: 1px solid rgba(127,134,172,.31);
+    padding-top: 50px;
+}
+.partnership img{
+	float: right;
+	width: 15%;
+	padding-left: 25px;
+	margin-top: -35px;
+	cursor: pointer;
+}
+.footer{
+	background-color: #0833ab;
+	width: 100%;
+	height: 200vh;
+}
+.footer-text{
+	margin-top: 120px;
+	width: 100%;
+}
+
+.footer-text p{		
+    width: 100px;    
+    display: block;   
+    border-bottom: 1px solid #fff; 
+    padding-top: 15px;
+}
+.footer-text h3{
+	position: absolute;
+	left: 11%;
+	margin-top: -14px;
+	color: #fff;
+	font-size: 15px;
+	line-height: 30px;
+    font-weight: 300;
+    letter-spacing: 3.96px;
+
+}
+.footer-text h1{	
+	font-size: 40px;
+    line-height: 1.6;    
+    font-weight: 900;
+    color: #fff;
+    padding-bottom: 70px;
+    padding-top: 25px;
+    width: 70%;
+}
+.footer-dalam h4{
+	font-size: 20px;
+    font-weight: 600;
+    letter-spacing: .73px;
+    color: #fff;
+}
+.lima-btn{
+	display: inline-block;
+}
+.lima-btn a{
+	margin-top: 25px;
+	margin-right: 15px;
+}
+.lima-btn a{
+	width: 150px;
+	text-decoration: none;
+	display: inline-block;	
+	padding: 13px 0;
+	color: #fff;
+	border: .5px solid #fff;
+	position: relative;
+	z-index: 1;
+	transition: color 0.5s;
+	text-align: center;	
+	border-radius: 4px;
+	font-size: 12px;
+}
+.lima-btn a span{
+	width: 0;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #ffc425;
+	z-index: -1;
+	transition: 0.5s;
+}
+.lima-btn a:hover span{
+	width: 100%;
+	border-radius: 4px;
+}
+.lima-btn a:hover{
+	color: #1f2960;
+	border-color: #ffc425;
+}
+input[type="text"], input[type="URL"]{
+	width: 75%;
+	margin-top: 30px;
+    border: unset;
+    border-bottom: 1.5px solid hsla(0,0%,100%,.2);
+    background: transparent;
+    border-radius: unset;
+    padding: 5px 0!important;
+    color: #fff
+}
+input[type="text2"], input[type="URL"]{
+	width: 75%;
+	margin-top: 80px;	
+    border: unset;
+    border-bottom: 1.5px solid hsla(0,0%,100%,.2);
+    background: transparent;
+    border-radius: unset;
+    padding: 5px 0!important;
+    color: #fff
+}
+label[for]{	
+	font-weight: 600;
+	font-size: 20px;
+	color: #fff;	
+}
+.row{
+	margin: 80px 0;
+}
+.enam-btn{
+	margin-top: -30px;
+}
+.enam-btn a{
+	width: 150px;
+	text-decoration: none;
+	display: inline-block;	
+	padding: 18px 18px;
+	color: #202943;
+	border: .5px solid #ffc425;
+	position: relative;
+	z-index: 1;
+	transition: color 0.5s;
+	text-align: center;
+	background-color: #ffc425;
+	border-radius: 4px;
+}
+.enam-btn a span{
+	width: 0;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #fff;
+	z-index: -1;
+	transition: 0.5s;
+}
+.enam-btn a:hover span{
+	width: 100%;
+	border-radius: 4px;
+}
+.footer-akhir{
+	width: 100%;
+	position: absolute;
+	bottom: -25%;
+	border-top: 1px solid rgba(127,134,172,.31);
+	padding: 50px 0;	
+}
+.icon{
+	width: 22%;
+}
+.icon img{
+	float: left;
+}
+.footer-akhir{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.icon-img img{
+	width: 35px;
+	padding: 0 0 0 25px;
+
+}
+.icon h4{
+	color: #fff;
+	font-weight: lighter;
+	margin-top: 8px;
+
+}
+.icon img{
+	width: 35px;
+	margin-right: 15px; 
 }
